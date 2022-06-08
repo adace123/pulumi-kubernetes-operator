@@ -96,7 +96,7 @@ metadata:
   name: pulumi-kubernetes-operator
 subjects:
 - kind: ServiceAccount
-  name: pulumi-kubernetes-operator
+  name: {{ .Values.serviceAccount.name }}
 roleRef:
   kind: Role
   name: pulumi-kubernetes-operator
